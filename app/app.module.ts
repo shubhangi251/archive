@@ -2,6 +2,7 @@ import { GithubFollowersService } from './services/github-followers.service';
 import { AppErrorHandler } from './common/app-error-handler';
 import { PostService } from './services/post.service';
 import { HttpModule } from '@angular/http';
+import { SignupFormComponent } from './signup-form/signup-form.component';
 import { SummaryPipe } from './summary.pipe';
 import { AuthorsService } from './authors.service';
 import { CoursesService } from './courses.service';
@@ -69,10 +70,10 @@ import { NavbararchiveComponent } from './navbararchive/navbararchive.component'
     HttpModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-        { path: 'followers/:id/:username', component: GithubProfileComponent },
-      { path: 'followers', component: GithubFollowersComponent },
+        { path: 'archive/:year/:date', component: Archive1Component },
+      { path: 'archive2/2017/2', component: Archive2Component },
     
-      { path: 'posts', component: PostsComponent},
+      { path: 'archive3/2017/3', component: Archive3Component},
         { path: '**', component: NotFoundComponent}
     ])
   ],
