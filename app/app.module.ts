@@ -22,7 +22,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { GithubProfileComponent } from './github-profile/github-profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { Archive1Component } from './archive1/archive1.component';
+import { ArchiveComponent } from './archive/archive.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +36,7 @@ import { Archive1Component } from './archive1/archive1.component';
     HomeComponent,
     GithubProfileComponent,
     NotFoundComponent,
-    Archive1Component,
+    ArchiveComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +45,7 @@ import { Archive1Component } from './archive1/archive1.component';
     HttpModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-        { path: 'archive/:year/:month', component: Archive1Component },
+        { path: 'archive/:year/:month', component: ArchiveComponent },
         { path: '**', component: NotFoundComponent}
     ])
   ],
