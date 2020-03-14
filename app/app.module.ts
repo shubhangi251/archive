@@ -13,7 +13,6 @@ import { NgModule, ErrorHandler } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { PanelComponent } from './panel/panel.component';
 import { InputFormatDirective } from './input-format.directive';
 import { TitleCasePipe } from './title-case.pipe';
 import { PostsComponent } from './posts/posts.component';
@@ -33,7 +32,6 @@ import { NavbararchiveComponent } from './navbararchive/navbararchive.component'
     AppComponent,
     CoursesComponent,
     SummaryPipe,
-    PanelComponent,
     InputFormatDirective,
     TitleCasePipe,
     PostsComponent,
