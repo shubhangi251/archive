@@ -23,10 +23,6 @@ import { HomeComponent } from './home/home.component';
 import { GithubProfileComponent } from './github-profile/github-profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { Archive1Component } from './archive1/archive1.component';
-import { Archive2Component } from './archive2/archive2.component';
-import { Archive3Component } from './archive3/archive3.component';
-import { NavbararchiveComponent } from './navbararchive/navbararchive.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,9 +37,6 @@ import { NavbararchiveComponent } from './navbararchive/navbararchive.component'
     GithubProfileComponent,
     NotFoundComponent,
     Archive1Component,
-    Archive2Component,
-    Archive3Component,
-    NavbararchiveComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,10 +45,7 @@ import { NavbararchiveComponent } from './navbararchive/navbararchive.component'
     HttpModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-        { path: 'archive/:year/:date', component: Archive1Component },
-      { path: 'archive2/2017/2', component: Archive2Component },
-    
-      { path: 'archive3/2017/3', component: Archive3Component},
+        { path: 'archive/:year/:month', component: Archive1Component },
         { path: '**', component: NotFoundComponent}
     ])
   ],
